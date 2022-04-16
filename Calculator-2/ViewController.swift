@@ -11,19 +11,30 @@ class ViewController: UIViewController {
     
     private var isFinishedTypingNumber : Bool = true
     
+    private var displayValue: Double {
+        get {
+            guard let number = Double(displayLabel.text!) else {
+                fatalError("Can't convet display label text to Double")
+            }
+            return number
+        }
+        set {
+            displayLabel.text = String(newValue)
+        }
+    }
+    
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
         isFinishedTypingNumber = true
-        let number = Double(displayLabel.text!)!
         
         if let calcMethod = sender.currentTitle {
             if calcMethod == "+/-" {
-                displayLabel.text = String(number * -1)
+                displayValue *= -1
             } else if calcMethod == "AC" {
                 displayLabel.text = "0"
             } else if calcMethod == "%" {
-                displayLabel.text = String(number / 100)
+                displayValue *= 0.01
             }
         }
     }
@@ -36,6 +47,13 @@ class ViewController: UIViewController {
                 displayLabel.text = numValue
                 isFinishedTypingNumber = false
             } else {
+                if numValue == "." {
+                 
+                    let isInt = floor(displayValue) == displayValue
+                    if !isInt {
+                        return
+                    }
+                }
                 displayLabel.text?.append(numValue)
             }
             
