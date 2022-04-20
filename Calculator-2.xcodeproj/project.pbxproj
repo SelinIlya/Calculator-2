@@ -13,6 +13,9 @@
 		AF1A9A31280AEFE200B68D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1A9A2F280AEFE200B68D42 /* Main.storyboard */; };
 		AF1A9A33280AEFE300B68D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1A9A32280AEFE300B68D42 /* Assets.xcassets */; };
 		AF1A9A36280AEFE300B68D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1A9A34280AEFE300B68D42 /* LaunchScreen.storyboard */; };
+		AFFA6C4628107A8C0094EFBD /* CalcLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA6C4528107A8C0094EFBD /* CalcLogic.swift */; };
+		AFFA6C4B281082830094EFBD /* Screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFA6C49281082830094EFBD /* Screenshot1.png */; };
+		AFFA6C4C281082830094EFBD /* Screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFA6C4A281082830094EFBD /* Screenshot2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AF1A9A32280AEFE300B68D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF1A9A35280AEFE300B68D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF1A9A37280AEFE300B68D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFA6C4528107A8C0094EFBD /* CalcLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcLogic.swift; sourceTree = "<group>"; };
+		AFFA6C49281082830094EFBD /* Screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot1.png; sourceTree = "<group>"; };
+		AFFA6C4A281082830094EFBD /* Screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				AF1A9A29280AEFE200B68D42 /* AppDelegate.swift */,
 				AF1A9A2B280AEFE200B68D42 /* SceneDelegate.swift */,
-				AF1A9A2D280AEFE200B68D42 /* ViewController.swift */,
-				AF1A9A2F280AEFE200B68D42 /* Main.storyboard */,
+				AFFA6C4728107A930094EFBD /* Model */,
+				AFFA6C4428107A650094EFBD /* Controller */,
+				AFFA6C4328107A440094EFBD /* View */,
+				AFFA6C48281082310094EFBD /* Screenshot */,
 				AF1A9A32280AEFE300B68D42 /* Assets.xcassets */,
 				AF1A9A34280AEFE300B68D42 /* LaunchScreen.storyboard */,
 				AF1A9A37280AEFE300B68D42 /* Info.plist */,
 			);
 			path = "Calculator-2";
+			sourceTree = "<group>";
+		};
+		AFFA6C4328107A440094EFBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF1A9A2F280AEFE200B68D42 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA6C4428107A650094EFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1A9A2D280AEFE200B68D42 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFFA6C4728107A930094EFBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA6C4528107A8C0094EFBD /* CalcLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFFA6C48281082310094EFBD /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA6C49281082830094EFBD /* Screenshot1.png */,
+				AFFA6C4A281082830094EFBD /* Screenshot2.png */,
+			);
+			path = Screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1A9A36280AEFE300B68D42 /* LaunchScreen.storyboard in Resources */,
+				AFFA6C4B281082830094EFBD /* Screenshot1.png in Resources */,
 				AF1A9A33280AEFE300B68D42 /* Assets.xcassets in Resources */,
 				AF1A9A31280AEFE200B68D42 /* Main.storyboard in Resources */,
+				AFFA6C4C281082830094EFBD /* Screenshot2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +184,7 @@
 				AF1A9A2E280AEFE200B68D42 /* ViewController.swift in Sources */,
 				AF1A9A2A280AEFE200B68D42 /* AppDelegate.swift in Sources */,
 				AF1A9A2C280AEFE200B68D42 /* SceneDelegate.swift in Sources */,
+				AFFA6C4628107A8C0094EFBD /* CalcLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
